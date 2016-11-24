@@ -3,7 +3,7 @@
 /* eslint key-spacing: 0, no-use-before-define: 0 */
 
 var sphero = require("sphero");
-var orb = sphero("c2:64:01:11:c9:7c");
+var orb = sphero("dd:3f:27:d5:69:ee");
 var http = require('http');
 var url = require('url');
 var querystring = require('querystring');
@@ -68,6 +68,7 @@ app.post('/', function(req, res){
   		orb.color(0x0000ff);
   		break;
   }
+  //orb.roll(150, 10);
   //res.send(html);
   res.sendfile('./1-form.html');
 });
