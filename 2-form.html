@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Move BB8</title>
+	<style>
+
+		img,form{
+
+    			display: block;
+    			width :300px;
+    			margin-left: auto;
+    			margin-right: auto  
+		}
+
+	</style>
+</head>
+<body>
+
+
+<img src="bb8.gif" alt="BB8"/>
+
+
+
+<form id="tableForm" action="/getJson" method="get">
+    <select id="selectpicker" data-style="btn-info" name="selectpicker">
+        <optgroup label="Select Table">
+            <option name="blue" value="blue">blue</option>
+            <option name="red" value="red">red</option>
+            <option name="green" value="green">green</option>
+        </optgroup>
+    </select>
+    <input type="submit" />
+</form>
+
+
+<form id="tableForm2" action="/getValues" method="get">
+    <select id="selectpicker2" data-style="btn-info" name="selectpicker2">
+            <option name="gyro" value="gyro">gyroscope</option>
+    </select>
+    <input type="submit" />
+</form>
+
+
+
+
+<form id="tableForm3" action="/getDirection" method="get">
+    <select id="direction" data-style="btn-info" name="direction">
+            <option name="droite" value="droite">droite</option>
+            <option name="gauche" value="gauche">gauche</option>
+			<option name="bas" value="bas">bas</option>
+			<option name="haut" value="haut">haut</option>
+    </select>
+    <input type="submit" />
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <form action="/" method="post">
+<select >
+<option id="userName" value="red">red</option>
+<option value="green">green</option>
+<option value="blue">blue</option>
+</select>
+<button type="submit">Submit</button>
+</form> -->
+
